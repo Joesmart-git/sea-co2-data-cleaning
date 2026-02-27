@@ -39,7 +39,7 @@ To standardize population data, varying text formats were systematically replace
 Rather than deleting rows with unreadable text strings during type conversion, I isolated the anomalies and explicitly replaced the errors with nulls or zeros to preserve the rest of the row's data:
 
 ```powerquery
-[cite_start]= Table.ReplaceErrorValues(#"consumption_co2_per_capita > D.decimal", {{"consumption_co2_per_capita", null}})[cite: 469]
+= Table.ReplaceErrorValues(#"consumption_co2_per_capita > D.decimal", {{"consumption_co2_per_capita", null}})
 ```
 
 ## Repository Structure
