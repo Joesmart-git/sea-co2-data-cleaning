@@ -34,6 +34,14 @@ To standardize population data, varying text formats were systematically replace
 = Table.ReplaceValue(#"267.6Million to 267600000", "264.6 Million", 264600000, Replacer.ReplaceValue, {"population"})
 = Table.ReplaceValue(#"264.6 Million to 264600000", "118 thousand", 118000, Replacer.ReplaceValue, {"population"})
 ```
+
+### 3. Safe Error Handling and Null Imputation
+Rather than deleting rows with unreadable text strings during type conversion, I isolated the anomalies and explicitly replaced the errors with nulls or zeros to preserve the rest of the row's data:
+
+```powerquery
+[cite_start]= Table.ReplaceErrorValues(#"consumption_co2_per_capita > D.decimal", {{"consumption_co2_per_capita", null}})[cite: 469]
+```
+
 ## Repository Structure
 * [(Dirty) Expanded SEA Dataset.xlsx]((Dirty)%20Expanded%20SEA%20Dataset.xlsx) - The raw, unstructured dataset.
 * [Cleaning Dataset Using Power Query - APAN.pbix](Cleaning%20Dataset%20Using%20Power%20Query%20-%20APAN.pbix) - The Power BI file containing the complete Power Query applied steps.
