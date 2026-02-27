@@ -35,8 +35,8 @@ To standardize population data, varying text formats were systematically replace
 = Table.ReplaceValue(#"264.6 Million to 264600000", "118 thousand", 118000, Replacer.ReplaceValue, {"population"})
 ```
 ## Repository Structure
-* (Dirty) Expanded SEA Dataset.xlsx - The raw, unstructured dataset.
-* Cleaning Dataset Using Power Query - APAN.pbix - The Power BI file containing the complete Power Query applied steps.
+* [(Dirty) Expanded SEA Dataset.xlsx]((Dirty)%20Expanded%20SEA%20Dataset.xlsx) - The raw, unstructured dataset.
+* [Cleaning Dataset Using Power Query - APAN.pbix](Cleaning%20Dataset%20Using%20Power%20Query%20-%20APAN.pbix) - The Power BI file containing the complete Power Query applied steps.
 
 ## Let's Connect
 If you're looking for a Data Analyst who can turn complex datasets into clear, actionable business insights, let's connect.
