@@ -4,6 +4,7 @@
 
 ## Project Overview
 Real-world data is rarely ready for immediate visualization. In this project, I processed and cleaned a highly unstructured raw dataset containing the carbon emissions of Southeast Asian countries. 
+
 Before (Raw Data)
 <img width="1752" height="552" alt="Before" src="https://github.com/user-attachments/assets/344fde58-173b-459d-93bb-82aa8c28c32e" />
 After (Raw Data)
