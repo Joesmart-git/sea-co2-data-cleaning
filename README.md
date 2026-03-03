@@ -7,7 +7,7 @@ Real-world data is rarely ready for immediate visualization. In this project, I 
 
 Before (Raw Data)
 <img width="1752" height="552" alt="Before" src="https://github.com/user-attachments/assets/344fde58-173b-459d-93bb-82aa8c28c32e" />
-After (Raw Data)
+After (Cleaned Data)
 <img width="1756" height="561" alt="After" src="https://github.com/user-attachments/assets/f1191541-aa14-4db7-9dc7-9bd298a09aa4" />
 
 
@@ -20,7 +20,7 @@ Initial data profiling revealed severe structural errors, including unequal dist
 To prepare this data for accurate reporting, I executed an end-to-end data cleansing workflow:
 
 * **Geographical Standardization & Deduplication:** Unified inconsistent naming conventions and removed 64 duplicate rows (reducing the dataset from 1,074 to 1,010 unique records) to prevent artificially inflated aggregates.
-* **Complex Text-to-Number Conversions:** Extracted numerical values from dirty strings (e.g., converting "Year 1919" into 1919), successfully preserving over 70 rows of valuable emissions data that would have otherwise been lost to type-conversion errors..
+* **Complex Text-to-Number Conversions:** Extracted numerical values from dirty strings (e.g., converting "Year 1919" into 1919), successfully preserving over 70 rows of valuable emissions data that would have otherwise been lost to type-conversion errors.
 * **Mathematical Anomaly Resolution:** Identified impossible negative values in both the population and GDP columns and corrected them using mathematical transformations.
 * **Logical Data Imputation:** Systematically resolved null values in the categorical `income_group` column by referencing the `iso_code` to assign the correct category.
 
